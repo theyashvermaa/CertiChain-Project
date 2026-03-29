@@ -1,7 +1,7 @@
 # CERTICHAIN : Secure • Tamper-Proof • Instantly Verifiable
 
  ~ LIVE LINK
-  https://theyashvermaa.github.io/CertiChain-Project/
+ https://certichain-project-ivn3.onrender.com
 
 CertiChain is a full-stack web application built for the Web3 + Open Innovation Hackathon. It solves the growing problem of certificate fraud by enabling secure issuance and instant verification of digital certificates using cryptographic hashing and QR codes.  ￼
 
@@ -145,9 +145,8 @@ For major changes, open an issue first to discuss.
 
 ⸻
 
-📄 License
-
+📄 License:-
 This project is licensed under the HACKINDIA 2026 License.
 
-	•	📧 Email: your-email@example.com
-	•	🌐 GitHub: https://github.com/your-username
+	•	📧 Email: tyv912005@gmail.com
+	•	🌐 GitHub: https://github.com/theyashvermaa
