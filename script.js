@@ -1,13 +1,3 @@
-/* ============================================================
-   CertiChain — Frontend Script
-   New features:
-   1. Password show/hide toggle
-   2. "Email exists" on register → redirect to login with email pre-filled
-   3. Navbar buttons work correctly when already logged in
-   4. Upgrade user → admin (from Profile page)
-   5. Bulk certificate generation + CSV/Excel/TXT file parsing
-   ============================================================ */
-
 const API = 'http://localhost:5000/api';
 
 // ── State ──────────────────────────────────────────────────
@@ -777,12 +767,11 @@ function checkUrlForVerify() {
 (function init() {
   updateNavbar();
 
-  // Determine which section to show on page load
   const raw   = window.location.hash.replace('#','').split('?')[0] || '';
   const valid = ['home','register','login','dashboard','generate','verify','profile'];
   const target = valid.includes(raw) ? raw : (currentUser ? 'dashboard' : 'home');
   history.replaceState({ section: target }, '', '#' + target);
-  _show(target, false);  // _show respects login/register — never redirects them
+  _show(target, false);
 
   checkUrlForVerify();
   selectTemplate('classic');
