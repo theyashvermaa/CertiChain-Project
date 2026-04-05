@@ -1,152 +1,105 @@
-# CERTICHAIN : Secure • Tamper-Proof • Instantly Verifiable
+# CertiChain
+### Secure • Tamper-Proof • Instantly Verifiable Certificates
 
- ~ LIVE LINK
- https://certichain-project-ivn3.onrender.com
+## Live Demo: 
+https://certichain-project-ivn3.onrender.com
 
-CertiChain is a full-stack web application built for the Web3 + Open Innovation Hackathon. It solves the growing problem of certificate fraud by enabling secure issuance and instant verification of digital certificates using cryptographic hashing and QR codes.  ￼
+## Overview
+CertiChain is a full-stack web application designed to eliminate certificate fraud through secure issuance and instant verification. It leverages cryptographic hashing and QR codes to ensure authenticity, integrity, and fast validation of digital certificates.
+The system provides a reliable way for organizations to issue certificates and for users or third parties to verify them without manual intervention.
 
-⸻
+## Key Features
+1. Authentication and Authorization
+2. Secure user registration and login using JWT
+3. Role-based access control:
+  Admin: Generate and manage certificates
+  User: Verify certificates
+4. Password encryption using bcrypt
 
-🚀 Features
+## Certificate Generation (Admin)
+1. Multiple customizable certificate templates
+2. Unique certificate ID format (e.g., CERT-XXXXXX)
+3. SHA-256 hash generation for tamper detection
+4. Embedded QR code for quick verification
+5. Print-ready certificate output
 
-🔐 Authentication & Roles
-	•	Secure login & registration using JWT
-	•	Role-based access:
-	•	Admin → Generate + Verify certificates
-	•	User → Verify only
-	•	Passwords encrypted using bcrypt
+## Certificate Verification
+1. Manual verification using certificate ID
+2. QR code scanning using camera
+3. Instant verification results: Valid / Tampered / Not Found / Revoked
 
-⸻
+## Admin Dashboard
+1. View all issued certificates
+2. Revoke certificates when necessary
+3. Monitor certificate status (active / revoked)
 
-🎓 Certificate Generation (Admin)
-	•	🎨 5 customizable certificate templates
-	•	🆔 Unique Certificate ID (CERT-XXXXXX)
-	•	🔒 SHA-256 hash for tamper detection
-	•	📱 QR code embedded for quick verification
-	•	🖨️ Print-ready certificates
+## User Experience
+1. Responsive design for mobile and desktop
+2. Single-page application behavior
+3. Smooth navigation and interaction
 
-⸻
+## Problem Statement
+Certificate fraud is a widespread issue:
+Fake certificates can be easily created
+Verification processes are slow and manual
+Lack of a universal validation system
 
-✅ Certificate Verification
-	•	🔎 Manual ID verification
-	•	📷 QR code scanning (camera-based)
-	•	⚡ Instant result:
-	•	✅ Valid
-	•	⚠️ Tampered
-	•	❌ Not Found
-	•	❌ Revoked
+CertiChain addresses these problems by providing a secure, fast, and automated verification system using cryptographic techniques.
 
-⸻
+## How It Works
+1. Admin generates a certificate
+2. System creates: Unique Certificate ID, SHA-256 hash, QR Code
+3. User verifies certificate by: Entering ID manually, or Scanning QR code
+4. System recomputes hash and compares
+5. Displays verification result instantly
 
-📊 Admin Dashboard
-	•	View issued certificates
-	•	Revoke certificates anytime
-	•	Track stats (active / revoked)
+## Tech Stack
+### Frontend
+1. HTML5
+2. CSS3
+3. JavaScript
+### Backend
+1. Node.js
+2. Express.js
+### Database
+1. MongoDB with Mongoose
+### Security
+1. JWT authentication
+2. bcrypt password hashing
+3. SHA-256 cryptographic hashing
+### QR Integration
+1. QRious (QR generation)
+2. Html5-QrCode (QR scanning)
 
-⸻
+## Demo Flow
+1. Register as Admin
+2. Generate a certificate
+3. Copy Certificate ID
+4. Verify manually
+5. Scan QR code
+6. Revoke certificate
+7. Verify again (shows revoked status)
 
-🎯 UX & Design
-	•	Responsive design (mobile-friendly)
-	•	Single-page application (SPA)
-	•	Smooth navigation & animations
+## Security Highlights
+1. Passwords securely hashed using bcrypt
+2. Token-based authentication using JWT
+3. Certificate integrity ensured via SHA-256
+4. Revocation mechanism to invalidate certificates
+5. Input validation to prevent misuse
 
-⸻
+## Future Improvements
+1. Blockchain integration for on-chain hash storage
+2. NFT-based certificates
+3. Multi-organization support
+4. Public API for third-party verification
 
-🧠 Problem It Solves
+## Contributing
+Contributions are welcome.
+For major changes, please open an issue first to discuss what you would like to modify.
 
-Certificate fraud is a major issue:
-	•	Fake certificates are easy to create
-	•	Verification is slow and manual
-	•	No universal validation system
-
-👉 CertiChain provides instant, cryptographic verification to eliminate fraud.  ￼
-
-⸻
-
-💡 How It Works
-	1.	Admin generates a certificate
-	2.	System creates:
-	•	Unique ID
-	•	SHA-256 hash
-	•	QR Code
-	3.	User scans QR / enters ID
-	4.	System recomputes hash
-	5.	Displays verification status instantly
-
-⸻
-
-🛠️ Tech Stack
-
-🔹 Frontend
-	•	HTML5
-	•	CSS3
-	•	JavaScript
-
-🔹 Backend
-	•	Node.js
-	•	Express.js
-
-🔹 Database
-	•	MongoDB + Mongoose
-
-🔹 Security
-	•	JWT Authentication
-	•	bcrypt password hashing
-	•	SHA-256 cryptographic hashing
-
-🔹 QR Integration
-	•	QRious (generation)
-	•	Html5-QrCode (scanning)
-
-⸻
-
-📁 Project Structure
-🎬 Demo Flow
-	1.	Register as Admin
-	2.	Generate certificate
-	3.	Copy Certificate ID
-	4.	Verify manually
-	5.	Scan QR code
-	6.	Revoke certificate
-	7.	Verify again → shows revoked
-
-⸻
-
-🔐 Security Highlights
-	•	🔒 Password hashing (bcrypt)
-	•	🔑 JWT authentication
-	•	🧾 SHA-256 certificate integrity
-	•	🚫 Revocation system
-	•	✅ Input validation
-
-⸻
-
-🌐 Hackathon Alignment
-
-✔ QR-based verification
-✔ Cryptographic proof (SHA-256)
-✔ Instant validation system
-✔ Revocation support
-
-⸻
-
-🚀 Future Enhancements
-	•	Blockchain integration (on-chain hash storage)
-	•	NFT-based certificates
-	•	Multi-organization support
-	•	API for third-party verification
-
-⸻
-
-🤝 Contributing
-
-Pull requests are welcome!
-For major changes, open an issue first to discuss.
-
-⸻
-
-📄 License:-
+## License
 This project is licensed under the HACKINDIA 2026 License.
 
-	•	📧 Email: tyv912005@gmail.com
-	•	🌐 GitHub: https://github.com/theyashvermaa
+## Contact
+Email: tyv912005@gmail.com
+GitHub: https://github.com/theyashvermaa
