@@ -13,6 +13,8 @@ const app = express();
 app.use(cors({
   origin: [ 'https://certi-chain-project.vercel.app',
     'https://certi-chain-project-94wrfsdpl-theyashvermaas-projects.vercel.app',
+    'https://certi-chain-project-3j5aey6v2-theyashvermaas-projects.vercel.app',
+    'https://certi-chain-project-git-main-theyashvermaas-projects.vercel.app',
     'http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5500', 'http://127.0.0.1:5500'],
   credentials: true
 }));
