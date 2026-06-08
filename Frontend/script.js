@@ -1,4 +1,4 @@
-const API = 'https://certichain-project-1umo.onrender.com/api';
+const API = 'https://certi-chain-project-94wrfsdpl-theyashvermaas-projects.onrender.com/api';
 
 // ── State ──────────────────────────────────────────────────
 let currentUser = JSON.parse(localStorage.getItem('cc_user') || 'null');
