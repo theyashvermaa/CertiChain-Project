@@ -11,22 +11,14 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5500', 'http://127.0.0.1:5500'],
+  origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5500', 'http://127.0.0.1:5500', 'https://certi-chain-project.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
 
-// Serve frontend static files
-app.use(express.static(path.join(__dirname, '../frontend')));
-
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/certs', certRoutes);
-
-// Catch-all: serve index.html for any non-API route
-app.get(/^(?!\/api).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'));
-});
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
