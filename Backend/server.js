@@ -11,7 +11,9 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5500', 'http://127.0.0.1:5500', 'https://certi-chain-project.vercel.app'],
+  origin: [ 'https://certi-chain-project.vercel.app',
+    'https://certi-chain-project-94wrfsdpl-theyashvermaas-projects.vercel.app',
+    'http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:5500', 'http://127.0.0.1:5500'],
   credentials: true
 }));
 app.use(express.json());
