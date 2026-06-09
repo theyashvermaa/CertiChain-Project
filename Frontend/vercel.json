@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/api/:path*",
+      "destination": "https://certi-chain-project-94wrfsdpl-theyashvermaas-projects.onrender.com/api/:path*"
+    }
   ]
 }
