@@ -1,8 +1,8 @@
-# CertiChain
-### Secure • Tamper-Proof • Instantly Verifiable Certificates
+# CertiChain: Generate Verifiable Certificates
+### Secure • Tamper-Proof • Instantly Verifiable
 
 ## Live Demo: 
-https://certichain-project-ivn3.onrender.com
+https://certi-chain-project.vercel.app/
 
 ## Overview
 CertiChain is a full-stack web application designed to eliminate certificate fraud through secure issuance and instant verification. It leverages cryptographic hashing and QR codes to ensure authenticity, integrity, and fast validation of digital certificates.
@@ -92,13 +92,6 @@ CertiChain addresses these problems by providing a secure, fast, and automated v
 2. NFT-based certificates
 3. Multi-organization support
 4. Public API for third-party verification
-
-## Contributing
-Contributions are welcome.
-For major changes, please open an issue first to discuss what you would like to modify.
-
-## License
-This project is licensed under the HACKINDIA 2026 License.
 
 ## Contact
 Email: tyv912005@gmail.com
